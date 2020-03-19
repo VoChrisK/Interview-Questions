@@ -1,3 +1,8 @@
+/*
+    Cracking the Coding Interview - Chapter 3, #3.2 - How would you design a stack which, in addition to push and pop, has a function which returns
+    the minimum element? Push, pop, and min should all operate in O(1) time.
+*/
+
 class StackMin {
     constructor() {
         this.stack = [];
