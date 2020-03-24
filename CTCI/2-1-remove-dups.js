@@ -1,4 +1,4 @@
-const Node = require("./node");
+const Node = require("../Others/node");
 
 /*
     Cracking the Coding Interview - Chapter 2, #2.1 - Write code to remove duplicates from an unsorted linked list.

@@ -1,4 +1,4 @@
-const Node = require("./node");
+const Node = require("../Others/node");
 
 const sumLists = function(list1, list2) {
     let newList = new Node(0);

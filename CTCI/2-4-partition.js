@@ -1,4 +1,4 @@
-const Node = require("./node");
+const Node = require("../Others/node");
 
 /*
     Cracking the Coding Interview - Chapter 2, #2.4 - Write code to partition a linked list around a value x, such that all nodes less than x come before

@@ -3,8 +3,8 @@
  * (e.g. if you have a tree with depth D, you'll have D linked lists)
  */
 
-const BinaryTree = require('./binary_tree');
-const Node = require('./node');
+const BinaryTree = require('../Others/binary_tree');
+const Node = require('../Others/node');
 
 const listOfDepthsBFS = function(node) {
     const listOfDepths = {};
