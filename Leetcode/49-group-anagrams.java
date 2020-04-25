@@ -5,6 +5,37 @@
  * Space complexity - O(n)
  */
 
+// solution 2: mapping indices:
+
+class Solution {
+    public List<List<String>> groupAnagrams(String[] strs) {
+        Map<String, Integer> map = new HashMap<String, Integer>();
+        List<List<String>> groups = new ArrayList<List<String>>();
+        int counter = 0;
+        char[] charArr;
+        String sortedWord;
+
+        for (String str : strs) {
+            charArr = str.toCharArray();
+            Arrays.sort(charArr);
+            sortedWord = String.valueOf(charArr);
+
+            if (map.containsKey(sortedWord)) {
+                groups.get(map.get(sortedWord)).add(str);
+            } else {
+                map.put(sortedWord, counter);
+                groups.add(new ArrayList<String>());
+                groups.get(counter).add(str);
+                counter++;
+            }
+        }
+
+        return groups;
+    }
+}
+
+// solution 1 (completed one month ago):
+
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
         Map<String, ArrayList<String>> map = new HashMap<String, ArrayList<String>>();
